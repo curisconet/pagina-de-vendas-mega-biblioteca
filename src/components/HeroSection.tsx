@@ -25,7 +25,7 @@ export default function HeroSection() {
           </a>
         </motion.div>
         <motion.div
-          className="flex-1 max-w-md lg:max-w-lg w-full"
+          className="flex-1 max-w-sm lg:max-w-sm w-full mx-auto lg:mr-0"
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.6, delay: 0.2 }}
