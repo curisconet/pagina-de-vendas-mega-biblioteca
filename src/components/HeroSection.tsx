@@ -17,12 +17,6 @@ export default function HeroSection() {
           <p className="text-lg md:text-xl text-muted-foreground leading-relaxed max-w-xl mx-auto lg:mx-0">
             Acesse agora a maior biblioteca digital do Brasil — leia ou ouça quando e onde quiser, sem mensalidade, sem limite.
           </p>
-          <a
-            href="#ofertas"
-            className="inline-block mt-8 bg-gradient-premium text-primary-foreground font-bold text-lg px-10 py-4 rounded-xl shadow-gold hover:scale-105 transition-transform"
-          >
-            ➡ QUERO VER AS OFERTAS
-          </a>
         </motion.div>
         <motion.div
           className="flex-1 max-w-sm lg:max-w-sm w-full mx-auto lg:mr-0"
@@ -38,6 +32,12 @@ export default function HeroSection() {
               allowFullScreen
             ></iframe>
           </div>
+          <a
+            href="#ofertas"
+            className="block w-full text-center mt-6 bg-gradient-premium text-primary-foreground font-bold text-lg px-8 py-4 rounded-xl shadow-gold hover:scale-105 transition-transform"
+          >
+            ➡ QUERO VER AS OFERTAS
+          </a>
         </motion.div>
       </div>
     </section>
