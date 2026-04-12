@@ -25,17 +25,19 @@ export default function HeroSection() {
           </a>
         </motion.div>
         <motion.div
-          className="flex-1 max-w-md lg:max-w-lg"
+          className="flex-1 max-w-md lg:max-w-lg w-full"
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.6, delay: 0.2 }}
         >
-          <img
-            src={heroDevices}
-            alt="Mega Biblioteca - 30.000 livros digitais"
-            className="w-full rounded-2xl shadow-card"
-            fetchpriority="high"
-          />
+          <div className="w-full rounded-2xl shadow-card overflow-hidden" style={{ aspectRatio: "9/16" }}>
+            <iframe
+              src="https://play.tynk.ai/p/28610843-dc5f-454d-89e6-f3f26805fa56"
+              className="w-full h-full border-none"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            ></iframe>
+          </div>
         </motion.div>
       </div>
     </section>
