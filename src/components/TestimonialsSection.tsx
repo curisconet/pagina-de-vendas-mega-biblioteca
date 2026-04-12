@@ -2,9 +2,9 @@ import { useState, useEffect, useCallback } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
 const images = [
-  "https://lh3.googleusercontent.com/sitesv/APaQ0ST0xAuOR8_xl2hTq3JBWFYUORfLG-DjKyYdMqB6lSsSIvRPoTkaESVoeihRPK8Cxok86ssNA7QUhkDmHsDcTo2gjydscByjFfnrOllgV1kGsR8chyYsI-B7_PZe8gvf_x_kE905zObiE20-NkxfxfJkInVlVHry3meOFDuuegzVfpNV6_-7nj6rgkbMybOkzvyxrVWisyfUnPtAbGjuwYCHSuUeg2-urKlh=w1280",
-  "https://lh3.googleusercontent.com/sitesv/APaQ0STsd6E7490_F1CrI_cXfDYdJP2QC_vJe1w-Gp3cm5giJVfTb_Cs--ZaIz5WJO6-WK1bIsoGBt5hrYTWVg9YnVZFZwzkX1xTRo6yIMFv70jHrjK5bCq3GCCsprS86D-ilP4iWYfa_6nEENIi77ohqHc6LWysloFgjXXuP--V17vab0o9dmhBC6Eo9NhAbD1ohZhsQSJHeiU_ufmNcqRzynAfg7hD7LpnJ0aQ=w1280",
-  "https://lh3.googleusercontent.com/sitesv/APaQ0SRKTJdA-dpSJkC94HWqGVdTfVQg7jMX_hLNQblVDyA-4Y5yKJCtOHQJ5vpAmT_NHIYTKq-3YVHsBU7N6glkS67iBvDISWoQLdKah8Xp9quUD60WuAullfr8i9RbOyxCcUxkzOBwvP5elaFrftvSZD0m7w2Qk69e7QWP8XPvRlA_kB-Acx6np27CRX1GcQEk7kBxSKmYNxDIqTFSfa_G2pfJJDgB_RVZyA2ijA8=w1280",
+  "/depoimentos/media__1775974518980.jpg",
+  "/depoimentos/media__1775974519190.png",
+  "/depoimentos/media__1775974519707.png",
 ];
 
 export default function TestimonialsSection() {
@@ -29,7 +29,7 @@ export default function TestimonialsSection() {
               key={current}
               src={images[current]}
               alt={`Depoimento ${current + 1}`}
-              className="w-full h-auto"
+              className="w-full max-h-[500px] md:max-h-[600px] object-contain mx-auto rounded-xl"
               initial={{ opacity: 0, x: 60 }}
               animate={{ opacity: 1, x: 0 }}
               exit={{ opacity: 0, x: -60 }}
