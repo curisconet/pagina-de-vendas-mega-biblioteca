@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import bookCovers from "@/assets/book-covers.png";
+import bookCovers from "@/assets/book-covers.webp";
 
 export default function BookShowcase() {
   return (

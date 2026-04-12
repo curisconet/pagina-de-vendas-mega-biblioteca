@@ -2,9 +2,9 @@ import { useState, useEffect, useCallback } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
 const images = [
-  "/depoimentos/media__1775974518980.jpg",
-  "/depoimentos/media__1775974519190.png",
-  "/depoimentos/media__1775974519707.png",
+  "/depoimentos/media__1775974518980.webp",
+  "/depoimentos/media__1775974519190.webp",
+  "/depoimentos/media__1775974519707.webp",
 ];
 
 export default function TestimonialsSection() {

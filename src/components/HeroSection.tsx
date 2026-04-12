@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import heroDevices from "@/assets/hero-devices.png";
+import heroDevices from "@/assets/hero-devices.webp";
 
 export default function HeroSection() {
   return (
@@ -34,7 +34,7 @@ export default function HeroSection() {
             src={heroDevices}
             alt="Mega Biblioteca - 30.000 livros digitais"
             className="w-full rounded-2xl shadow-card"
-            loading="lazy"
+            fetchpriority="high"
           />
         </motion.div>
       </div>

@@ -2,8 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&family=Space+Grotesk:wght@500;600;700&display=swap');
-
+/* Fontes do Google movidas para usar <link rel="preconnect"> no HTML, visando ganho de performance e pontuação no PageSpeed! */
 @layer base {
   :root {
     --background: 220 20% 7%;
