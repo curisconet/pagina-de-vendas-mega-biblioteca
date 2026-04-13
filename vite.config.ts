@@ -12,6 +12,19 @@ export default defineConfig(({ mode }) => ({
       overlay: false,
     },
   },
+  build: {
+    target: "esnext",
+    cssCodeSplit: true,
+    rollupOptions: {
+      output: {
+        manualChunks: {
+          vendor: ["react", "react-dom", "react-router-dom"],
+          framer: ["framer-motion"],
+          ui: ["@radix-ui/react-accordion", "@radix-ui/react-dialog", "@radix-ui/react-slot", "lucide-react"],
+        },
+      },
+    },
+  },
   plugins: [react(), mode === "development" && componentTagger()].filter(Boolean),
   resolve: {
     alias: {
