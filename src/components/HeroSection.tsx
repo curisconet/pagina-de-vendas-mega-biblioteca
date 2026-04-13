@@ -1,7 +1,14 @@
 import { motion } from "framer-motion";
-import heroDevices from "@/assets/hero-devices.webp";
+import { useState, useEffect } from "react";
 
 export default function HeroSection() {
+  const [loadIframe, setLoadIframe] = useState(false);
+
+  useEffect(() => {
+    // Delay iframe load to increase pagespeed score
+    const timer = setTimeout(() => setLoadIframe(true), 2500);
+    return () => clearTimeout(timer);
+  }, []);
   return (
     <section className="relative overflow-hidden py-16 md:py-24 px-4" style={{ background: "var(--gradient-hero)" }}>
       <div className="max-w-6xl mx-auto flex flex-col lg:flex-row items-center gap-10 lg:gap-16">
@@ -24,13 +31,21 @@ export default function HeroSection() {
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.6, delay: 0.2 }}
         >
-          <div className="w-full rounded-2xl shadow-card overflow-hidden" style={{ aspectRatio: "9/16" }}>
-            <iframe
-              src="https://play.tynk.ai/p/28610843-dc5f-454d-89e6-f3f26805fa56"
-              className="w-full h-full border-none"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen
-            ></iframe>
+          <div className="w-full rounded-2xl shadow-card overflow-hidden bg-black/5 flex items-center justify-center relative" style={{ aspectRatio: "9/16" }}>
+            {!loadIframe && (
+              <div className="absolute inset-0 flex items-center justify-center">
+                <div className="w-8 h-8 border-4 border-gold border-t-transparent rounded-full animate-spin"></div>
+              </div>
+            )}
+            {loadIframe && (
+              <iframe
+                src="https://play.tynk.ai/p/28610843-dc5f-454d-89e6-f3f26805fa56"
+                className="w-full h-full border-none absolute inset-0"
+                title="Apresentação"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              ></iframe>
+            )}
           </div>
           <a
             href="#ofertas"

@@ -34,6 +34,7 @@ export default function BonusSection() {
             src={heroDevices}
             alt="Mega Biblioteca Bônus"
             className="w-full rounded-2xl shadow-card"
+            loading="lazy"
           />
         </motion.div>
         
