@@ -11,7 +11,6 @@ import GuaranteeSection from "@/components/GuaranteeSection";
 import FaqSection from "@/components/FaqSection";
 import SocialProofNotification from "@/components/SocialProofNotification";
 import Footer from "@/components/Footer";
-import ExitIntentPopup from "@/components/ExitIntentPopup";
 
 const Index = () => {
   return (
@@ -29,7 +28,6 @@ const Index = () => {
       <FaqSection />
       <Footer />
       <SocialProofNotification />
-      <ExitIntentPopup />
     </div>
   );
 };
