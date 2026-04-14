@@ -54,7 +54,7 @@ export default function OffersSection() {
               </ul>
             </div>
             <a
-              href="https://go.tribopay.com.br/tt1om6dbzv"
+              href="https://pay.wiapy.com/FiNo5JSWns"
               target="_blank"
               rel="noopener noreferrer"
               className="block w-full bg-gradient-premium text-primary-foreground font-black text-center py-4 rounded-xl shadow-gold hover:scale-105 transition-transform text-lg"
@@ -87,7 +87,7 @@ export default function OffersSection() {
               ))}
             </ul>
             <a
-              href="https://go.tribopay.com.br/ohg6yrqiyq"
+              href="https://pay.wiapy.com/qN9KhIS0qD"
               target="_blank"
               rel="noopener noreferrer"
               className="block w-full border-2 border-gold text-gold font-bold text-center py-4 rounded-xl hover:bg-gold/10 transition-colors"
